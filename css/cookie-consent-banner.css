@@ -1,0 +1,35 @@
+/* Cookie banner specific fixes */
+#cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+#cookie-accept-all, #cookie-customize, #cookie-reject-all,
+.cookie-button, button[id^="cookie"] {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+#cookie-accept-all, .cookie-button.accept, button#cookie-accept-all {
+  background-color: #58CC02;
+  color: white;
+  border: none;
+}
+
+#cookie-customize, #cookie-reject-all,
+.cookie-button.customize, .cookie-button.reject,
+button#cookie-customize, button#cookie-reject-all {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+}

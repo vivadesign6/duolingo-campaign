@@ -1,29 +1,44 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Get the cookie banner element
-  const cookieBanner = document.getElementById('cookie-consent-banner');
+  // Find all cookie banner buttons by ID or class
+  var acceptButtons = document.querySelectorAll('#cookie-accept-all, .cookie-button.accept');
+  var customizeButtons = document.querySelectorAll('#cookie-customize, .cookie-button.customize');
+  var rejectButtons = document.querySelectorAll('#cookie-reject-all, .cookie-button.reject');
   
-  // Check if it exists
-  if (cookieBanner) {
-    // Check if consent was already given
-    if (localStorage.getItem('cookieConsent')) {
-      cookieBanner.style.display = 'none';
-    }
-    
-    // Add event listeners to buttons
-    document.getElementById('cookie-accept-all').addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'accepted');
-      cookieBanner.style.display = 'none';
+  // Find the cookie banner by ID or class
+  var cookieBanner = document.querySelector('#cookie-consent-banner, .cookie-banner');
+  
+  // Add event listeners to all accept buttons
+  acceptButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      if (cookieBanner) {
+        cookieBanner.style.display = 'none';
+        localStorage.setItem('cookieConsent', 'accepted');
+      }
     });
-    
-    document.getElementById('cookie-customize').addEventListener('click', function() {
-      // You could open a modal here
-      localStorage.setItem('cookieConsent', 'customized');
-      cookieBanner.style.display = 'none';
+  });
+  
+  // Add event listeners to all customize buttons
+  customizeButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      if (cookieBanner) {
+        cookieBanner.style.display = 'none';
+        localStorage.setItem('cookieConsent', 'customized');
+      }
     });
-    
-    document.getElementById('cookie-reject-all').addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'rejected');
-      cookieBanner.style.display = 'none';
+  });
+  
+  // Add event listeners to all reject buttons
+  rejectButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      if (cookieBanner) {
+        cookieBanner.style.display = 'none';
+        localStorage.setItem('cookieConsent', 'rejected');
+      }
     });
+  });
+  
+  // Check if consent was already given
+  if (localStorage.getItem('cookieConsent') && cookieBanner) {
+    cookieBanner.style.display = 'none';
   }
 });

@@ -327,6 +327,73 @@ p {
     margin-top: var(--space-lg);
 }
 
+/* Improved navigation */
+header, .main-navigation {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 25px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #58CC02;
+}
+
+.nav-link.active {
+  color: #58CC02;
+}
+
+.toggle-navigation {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-navigation {
+    display: block;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-menu {
+    display: block;
+  }
+  
+  .nav-item {
+    margin: 8px 0;
+    margin-left: 0;
+  }
+}
 /* ==========================================================================
    Hero Section
    ========================================================================== */

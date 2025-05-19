@@ -404,20 +404,28 @@
         </div>
     </div>
 
-    <div class="carpet-customizer-container">
-  <h2>Design Your Magic Carpet</h2>
-  <iframe 
-    src="https://vivadesign6.github.io/carpet-language-flights/" 
-    style="width: 100%; height: 600px; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
-    title="Magic Carpet Customizer">
-  </iframe>
-  <div style="text-align: center; margin-top: 20px;">
-    <p>Unlock premium patterns with <strong>Super Duolingo</strong>!</p>
-    <a href="signup.html" style="display: inline-block; background-color: #F0B90B; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; text-decoration: none;">Try Premium Free</a>
-  </div>
-</div>
-
-    <script src="js/main.js"></script>
-    <script src="js/carpet-customizer.js"></script>
-</body>
-</html>
+   <section class="iframe-section" style="padding: 40px 0; background-color: #f8f8f8; margin-top: 20px;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="font-size: 32px; margin-bottom: 20px; text-align: center; color: #1cb0f6;">Design Your Magic Carpet</h2>
+        <p style="text-align: center; margin-bottom: 30px; font-size: 18px;">Watch your carpet transform as you learn languages!</p>
+        
+        <div style="position: relative; padding-bottom: 20px;">
+            <!-- Direct iframe with inline styles for maximum reliability -->
+            <iframe 
+                src="https://vivadesign6.github.io/carpet-language-flights/" 
+                style="display: block; width: 100%; height: 600px; border: none; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.15);"
+                title="Magic Carpet Customizer"
+                loading="eager"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            
+            <!-- Fallback content in case iframe doesn't load -->
+            <div id="iframe-fallback" style="display: none; text-align: center; padding: 40px; background: #f0f0f0; border-radius: 12px;">
+                <h3>Interactive Carpet Customizer</h3>
+                <p>Experience not loading? Try refreshing the page.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: rgba(240, 185, 11, 0.1); border-radius: 12px;">
+            <p style="font-size: 18px; margin-bottom: 15px;">Unlock premium patterns and magical

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+Sitemap: https://yourusername.github.io/duolingo-campaign/sitemap.xml

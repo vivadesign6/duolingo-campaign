@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Magic Carpet | Duolingo Language Learning</title>
+    <meta name="description" content="Design your own Magic Carpet that evolves as you learn. Personalize patterns, colors and watch your carpet transform with your language progress.">
+    <meta name="keywords" content="customize magic carpet, Duolingo premium upgrade, personalized learning, language patterns, interactive learning">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Customize Your Magic Carpet | Duolingo">
+    <meta property="og:description" content="Design your own Magic Carpet that evolves as you learn. Personalize and watch it transform with your language progress.">
+    <meta property="og:image" content="https://your-github-pages-url/images/9.png">
+    <meta property="og:url" content="https://your-github-pages-url/customizer.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="canonical" href="https://your-github-pages-url/customizer.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carpet-customizer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-navigation">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/1.png" alt="Duolingo Logo" width="150" height="40">
+                        </a>
+                    </div>
+                    
+                    <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <ul id="main-menu" class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="customizer.html" class="nav-link active">Magic Carpet Experience</a></li>
+                        <li class="nav-item"><a href="parents-faq.html" class="nav-link">For Parents</a></li>
+                        <li class="nav-item"><a href="signup.html" class="nav-link">Start Free Trial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="experience-hero">
+            <div class="container">
+                <h1 class="page-title">Customize Your Magic Carpet</h1>
+                <p class="page-subtitle">Personalize your language learning journey and watch your carpet transform as you learn</p>
+            </div>
+        </section>
+
+        <section class="carpet-customizer-section">
+            <div class="container">
+                <div class="carpet-customizer">
+                    <div class="customizer-left">
+                        <div class="carpet-preview">
+                            <div class="carpet-container">
+                                <div id="carpet-visual" class="carpet-visual">
+                                    <!-- Carpet will be rendered by JS -->
+                                    <div class="carpet-base"></div>
+                                    <div class="carpet-pattern"></div>
+                                    <div class="carpet-overlay"></div>
+                                    <div class="carpet-threads"></div>
+                                    <div class="carpet-gems"></div>
+                                    <div class="carpet-league-effects"></div>
+                                    <div class="duo-character">
+                                        <img src="images/10.png" alt="Duo the owl" class="duo-image">
+                                    </div>
+                                </div>
+                                <div class="carpet-shadow"></div>
+                                <div class="flight-height-indicator">
+                                    <div class="height-marker bronze">Bronze</div>
+                                    <div class="height-marker silver">Silver</div>
+                                    <div class="height-marker gold">Gold</div>
+                                    <div class="height-marker diamond">Diamond</div>
+                                </div>
+                            </div>
+                            
+                            <div class="journey-visualization">
+                                <div class="journey-path">
+                                    <div class="journey-node completed" data-node="1">
+                                        <div class="node-icon">1</div>
+                                        <div class="node-label">First Words</div>
+                                    </div>
+                                    <div class="journey-node active" data-node="2">
+                                        <div class="node-icon">2</div>
+                                        <div class="node-label">Basic Phrases</div>
+                                    </div>
+                                    <div class="journey-node locked" data-node="3">
+                                        <div class="node-icon">3</div>
+                                        <div class="node-label">Conversation</div>
+                                    </div>
+                                    <div class="journey-node locked premium" data-node="4">
+                                        <div class="node-icon">4</div>
+                                        <div class="node-label">Fluency</div>
+                                        <div class="premium-badge">Premium</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="customizer-right">
+                        <div class="customizer-tabs">
+                            <button class="tab-button active" data-tab="design">Carpet Design</button>
+                            <button class="tab-button" data-tab="learning">Learning Style</button>
+                            <button class="tab-button" data-tab="achievements">Achievements</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="design-tab">
+                            <h3>Select Pattern</h3>
+                            <div class="pattern-options">
+                                <button class="pattern-option" data-pattern="classic">
+                                    <img src="images/11.png" alt="Classic pattern" width="60" height="60">
+                                    <span class="pattern-name">Classic</span>
+                                </button>
+                                <button class="pattern-option active" data-pattern="geometric">
+                                    <img src="images/12.png" alt="Geometric pattern" width="60" height="60">
+                                    <span class="pattern-name">Geometric</span>
+                                </button>
+                                <button class="pattern-option" data-pattern="floral">
+                                    <img src="images/13.png" alt="Floral pattern" width="60" height="60">
+                                    <span class="pattern-name">Floral</span>
+                                </button>
+                                <button class="pattern-option premium" data-pattern="arabesque">
+                                    <img src="images/14.png" alt="Arabesque pattern" width="60" height="60">
+                                    <span class="pattern-name">Arabesque</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                                <button class="pattern-option premium" data-pattern="royal">
+                                    <img src="images/15.png" alt="Royal pattern" width="60" height="60">
+                                    <span class="pattern-name">Royal</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                            </div>
+                            
+                            <h3>Select Color</h3>
+                            <div class="color-options">
+                                <button class="color-option" data-color="purple" style="background-color: #A560F8">
+                                    <span class="sr-only">Purple</span>
+                                </button>
+                                <button class="color-option active" data-color="blue" style="background-color: #1CB0F6">
+                                    <span class="sr-only">Blue</span>
+                                </button>
+                                <button class="color-option" data-color="green" style="background-color: #58CC02">
+                                    <span class="sr-only">Green</span>
+                                </button>
+                                <button class="color-option premium" data-color="gold" style="background-color: #FFD900">
+                                    <span class="sr-only">Gold</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                                <button class="color-option premium" data-color="orange" style="background-color: #FF9600">
+                                    <span class="sr-only">Orange</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                            </div>
+                            
+                            <h3>Thread Embellishments</h3>
+                            <div class="thread-options">
+                                <button class="thread-option active" data-thread="standard">
+                                    <div class="thread-preview standard"></div>
+                                    <span class="thread-name">Standard</span>
+                                </button>
+                                <button class="thread-option" data-thread="silver">
+                                    <div class="thread-preview silver"></div>
+                                    <span class="thread-name">Silver</span>
+                                </button>
+                                <button class="thread-option premium" data-thread="gold">
+                                    <div class="thread-preview gold"></div>
+                                    <span class="thread-name">Gold</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                                <button class="thread-option premium" data-thread="magical">
+                                    <div class="thread-preview magical"></div>
+                                    <span class="thread-name">Magical</span>
+                                    <span class="premium-badge">PRO</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="learning-tab">
+                            <h3>Learning Style</h3>
+                            <p class="tab-description">Your learning style influences how your Magic Carpet looks and behaves. Choose your preferred learning style to see how it transforms your carpet.</p>
+                            
+                            <div class="learning-style-options">
+                                <div class="learning-style-option active" data-style="visual">
+                                    <div class="style-icon">
+                                        <img src="images/16.png" alt="Visual learner icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Visual Learner</h4>
+                                        <p>Your carpet will develop vibrant, picture-based patterns that help you remember words and phrases through images.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="learning-style-option" data-style="auditory">
+                                    <div class="style-icon">
+                                        <img src="images/17.png" alt="Auditory learner icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Auditory Learner</h4>
+                                        <p>Your carpet will develop musical motifs and sound-wave patterns that pulse when you practice pronunciation.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="learning-style-option" data-style="kinesthetic">
+                                    <div class="style-icon">
+                                        <img src="images/18.png" alt="Kinesthetic learner icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Kinesthetic Learner</h4>
+                                        <p>Your carpet will develop interactive elements that respond to movement, helping you learn through action.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="learning-style-option premium" data-style="personalized">
+                                    <div class="style-icon">
+                                        <img src="images/19.png" alt="Personalized learning icon" width="40" height="40">
+                                    </div>
+                                    <div class="style-details">
+                                        <h4>Adaptive Learning</h4>
+                                        <p>Premium feature: Your carpet automatically adapts to your unique learning style based on your interactions.</p>
+                                        <span class="premium-badge">PRO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="achievements-tab">
+                            <h3>Your Achievements</h3>
+                            <p class="tab-description">Watch how your achievements transform your Magic Carpet! Each milestone unlocks new magical elements.</p>
+                            
+                            <div class="streak-counter">
+                                <div class="streak-label">Your Streak</div>
+                                <div class="streak-value" id="streak-counter">7</div>
+                                <div class="streak-description">Day streak adds golden threads</div>
+                            </div>
+                            
+                            <div class="gem-counter">
+                                <div class="gem-label">Your Gems</div>
+                                <div class="gem-value" id="gem-counter">145</div>
+                                <div class="gem-description">Gems add sparkle effects</div>
+                            </div>
+                            
+                            <div class="league-selector">
+                                <h4>Current League</h4>
+                                <p class="league-description">Your league determines how high your carpet can fly!</p>
+                                <div class="league-options">
+                                    <button class="league-option active" data-league="bronze">
+                                        <div class="league-icon bronze"></div>
+                                        <span class="league-name">Bronze</span>
+                                    </button>
+                                    <button class="league-option" data-league="silver">
+                                        <div class="league-icon silver"></div>
+                                        <span class="league-name">Silver</span>
+                                    </button>
+                                    <button class="league-option" data-league="gold">
+                                        <div class="league-icon gold"></div>
+                                        <span class="league-name">Gold</span>
+                                    </button>
+                                    <button class="league-option premium" data-league="diamond">
+                                        <div class="league-icon diamond"></div>
+                                        <span class="league-name">Diamond</span>
+                                        <span class="premium-badge">PRO</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="premium-upgrade">
+                            <div class="premium-features">
+                                <h3>Premium Features Unlock:</h3>
+                                <ul class="premium-features-list">
+                                    <li>Exclusive premium patterns & colors</li>
+                                    <li>Magical golden thread embellishments</li>
+                                    <li>Adaptive learning style personalization</li>
+                                    <li>Diamond League heights & destinations</li>
+                                    <li>Interactive gems & special effects</li>
+                                </ul>
+                            </div>
+                            <a href="signup.html" class="button primary-cta">Ask your grown-up to unlock Super Duolingo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/8.png" alt="Duolingo Logo" width="120" height="32">
+                    </div>
+                    <p class="footer-tagline">Learning language through magical journeys</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="customizer.html">Magic Carpet Experience</a></li>
+                        <li><a href="parents-faq.html">For Parents</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" id="privacy-link">Privacy & GDPR</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Duolingo. All rights reserved. This is a student project for Bournemouth University.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" class="social-icon facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter" class="social-icon twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram" class="social-icon instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Privacy & GDPR</h2>
+            <p>At Duolingo, we take your privacy and data protection seriously.</p>
+            
+            <h3>What data we collect:</h3>
+            <ul>
+                <li>Basic contact information (email)</li>
+                <li>Child's first name and age</li>
+                <li>Learning preferences</li>
+            </ul>
+            
+            <h3>How we use your data:</h3>
+            <ul>
+                <li>To personalize your child's learning experience</li>
+                <li>To send important updates about your account</li>
+                <li>To improve our services</li>
+            </ul>
+            
+            <h3>Your rights:</h3>
+            <ul>
+                <li>Access your data at any time</li>
+                <li>Request modification or deletion of your data</li>
+                <li>Withdraw consent at any time</li>
+            </ul>
+            
+            <p>For more information, please view our <a href="#">full Privacy Policy</a>.</p>
+        </div>
+    </div>
+
+    <!-- Premium Feature Overlay -->
+    <div id="premium-overlay" class="premium-overlay">
+        <div class="premium-modal">
+            <span class="close-modal" aria-label="Close">&times;</span>
+            <h3>Unlock Premium Magic</h3>
+            <p>Start your 14-day free trial to access all premium carpet designs, golden threads, and magical effects.</p>
+            <div class="premium-feature-highlight">
+                <img id="premium-feature-image" src="images/20.png" alt="Premium feature" class="responsive-image">
+                <p id="premium-feature-description">Premium features make your Magic Carpet more visually stunning and responsive to your learning progress.</p>
+            </div>
+            <a href="signup.html" class="button primary-cta">Start 14-Day Free Trial</a>
+            <button class="text-button close-modal-button">Continue with Free Version</button>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>We Value Your Privacy</h3>
+            <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+            
+            <div class="cookie-buttons">
+                <button id="cookie-accept-all" class="cookie-button accept">Accept All</button>
+                <button id="cookie-customize" class="cookie-button customize">Customize</button>
+                <button id="cookie-reject-all" class="cookie-button reject">Reject Non-Essential</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/carpet-customizer.js"></script>
+</body>
+</html>
